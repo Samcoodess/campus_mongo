@@ -1,0 +1,107 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Global styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #232f3e;
+  color: white;
+  padding: 10px 0;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Main content styles */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Search box styles */
+.search-box {
+  flex: 1;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+button {
+  background-color: #61dafb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4fa3d1;
+}
+
+/* Footer styles */
+footer {
+  background-color: #232f3e;
+  color: white;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Item styles */
+.item {
+  flex: 0 0 calc(33.333% - 20px);
+  margin-bottom: 20px;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.item-details {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .item {
+    flex: 0 0 100%;
+  }
+}
